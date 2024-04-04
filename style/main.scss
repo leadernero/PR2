@@ -1,0 +1,189 @@
+body {
+    background-color: #F2F9FF;
+}
+
+.header {
+    width: 100%;
+    max-width: 1024px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+
+    .header_logo {
+        margin-right: 5px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    button {
+        width: 40%;
+        background-color: transparent;
+        border: solid #43AAFF 1px;
+        color: #43AAFF;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 50px;
+        cursor: pointer;
+        
+    }
+    button:hover{
+        background-color: #43AAFF;
+        color: #F2F9FF;
+        transition: 1s;
+    }
+}
+
+.button {
+    background-color: transparent;
+    border: solid #43AAFF 1px;
+    color: #43AAFF;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    :hover{
+        color: #FFAAFF;
+    }
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+
+    .container-1 {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 24%;
+        }
+    }
+
+    .promo {
+        img {
+            width: 100%;
+        }
+
+        margin-top: 5vw;
+
+    }
+
+    .grid1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1.2fr 0.6fr;
+        gap: 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "photo1 photo2 photo3"
+            "photo4 photo4 photo5"
+            ". . .";
+    }
+
+    %grid-item {
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .photo1 {
+        @extend %grid-item;
+        grid-area: photo1;
+        border-radius: 10%;
+    }
+
+    .photo4 {
+        @extend %grid-item;
+        grid-area: photo4;
+        border-radius: 30px;
+    }
+
+    .photo2 {
+        @extend %grid-item;
+        grid-area: photo2;
+        border-radius: 10%;
+    }
+
+    .photo3 {
+        @extend %grid-item;
+        grid-area: photo3;
+        border-radius: 10%;
+    }
+
+    .photo5 {
+        @extend %grid-item;
+        grid-area: photo5;
+        border-radius: 30px;
+    }
+
+    .promo-screen {
+        margin-top: 10px;
+        text-align: center;
+
+        img {
+            width: 60%;
+
+        }
+    }
+
+    .grid2 {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "photo1 photo2 photo3"
+            "photo4 photo4 photo4";
+    }
+    
+
+    .photo1 {
+        grid-area: photo1;
+        @extend %grid-item;
+        border-radius: 10%;
+    }
+
+    .photo2 {
+        grid-area: photo2;
+        @extend %grid-item;
+        border-radius: 10%;
+    }
+
+    .photo3 {
+        grid-area: photo3;
+        @extend %grid-item;
+        border-radius: 10%;
+    }
+
+    .photo4 {
+        grid-area: photo4;
+        @extend %grid-item;
+    }
+}
+.KONEC{
+    img {
+        width: 100%;
+    }
+    border-radius: 4%;
+    gap: 10px;
+}
+.KONEC2{
+    margin: 2vw;
+    img {
+        width: 100%;
+    }
+}

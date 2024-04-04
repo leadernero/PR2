@@ -1,0 +1,162 @@
+body {
+  background-color: #F2F9FF;
+}
+
+.header {
+  width: 100%;
+  max-width: 1024px;
+  margin-bottom: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .header_logo {
+  margin-right: 5px;
+}
+.header img {
+  width: 100%;
+}
+.header button {
+  width: 40%;
+  background-color: transparent;
+  border: solid #43AAFF 1px;
+  color: #43AAFF;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.header button:hover {
+  background-color: #43AAFF;
+  color: #F2F9FF;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.button {
+  background-color: transparent;
+  border: solid #43AAFF 1px;
+  color: #43AAFF;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.button :hover {
+  color: #FFAAFF;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+}
+.main .container-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main .container-1 img {
+  width: 24%;
+}
+.main .promo {
+  margin-top: 5vw;
+}
+.main .promo img {
+  width: 100%;
+}
+.main .grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.2fr 0.6fr;
+  gap: 10px;
+  grid-auto-flow: row;
+  grid-template-areas: "photo1 photo2 photo3" "photo4 photo4 photo5" ". . .";
+}
+.main .photo5, .main .photo3, .main .photo2, .main .photo4, .main .photo1 {
+  width: 100%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.main .photo1 {
+  grid-area: photo1;
+  border-radius: 10%;
+}
+.main .photo4 {
+  grid-area: photo4;
+  border-radius: 30px;
+}
+.main .photo2 {
+  grid-area: photo2;
+  border-radius: 10%;
+}
+.main .photo3 {
+  grid-area: photo3;
+  border-radius: 10%;
+}
+.main .photo5 {
+  grid-area: photo5;
+  border-radius: 30px;
+}
+.main .promo-screen {
+  margin-top: 10px;
+  text-align: center;
+}
+.main .promo-screen img {
+  width: 60%;
+}
+.main .grid2 {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  grid-auto-flow: row;
+  grid-template-areas: "photo1 photo2 photo3" "photo4 photo4 photo4";
+}
+.main .photo1 {
+  grid-area: photo1;
+  border-radius: 10%;
+}
+.main .photo2 {
+  grid-area: photo2;
+  border-radius: 10%;
+}
+.main .photo3 {
+  grid-area: photo3;
+  border-radius: 10%;
+}
+.main .photo4 {
+  grid-area: photo4;
+}
+
+.KONEC {
+  border-radius: 4%;
+  gap: 10px;
+}
+.KONEC img {
+  width: 100%;
+}
+
+.KONEC2 {
+  margin: 2vw;
+}
+.KONEC2 img {
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */
